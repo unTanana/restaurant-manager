@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/cipriantanana/Library/Application Support/Herd/bin/php84",
+            "args": [
+                "/Users/cipriantanana/Work/Personal/restaurant-platform/restaurant-manager/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}

@@ -131,11 +131,12 @@
             "npm run types"
         ],
         "fix": [
-            "composer rector || echo 'Rector failed'; composer phpstan || echo 'PHPStan failed'; composer lint || echo 'Lint failed'"
+            "composer generate-docs || echo 'Generate Docs failed'; composer rector || echo 'Rector failed'; composer phpstan || echo 'PHPStan failed'; composer lint || echo 'Lint failed'"
         ],
         "phpstan": "./vendor/bin/phpstan analyse app --memory-limit=2G",
         "phpstan-baseline": "./vendor/bin/phpstan analyse --generate-baseline --memory-limit=256M",
         "generate-docs": [
+            "@php artisan wayfinder:generate",
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:models --write"
         ]

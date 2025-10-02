@@ -26,7 +26,7 @@ export default function ForgotPassword({ status }: { status?: string }) {
             )}
 
             <div className="space-y-6">
-                <Form {...PasswordResetLinkController.store.form()}>
+                <Form {...PasswordResetLinkController.store()}>
                     {({ processing, errors }) => (
                         <>
                             <div className="grid gap-2">

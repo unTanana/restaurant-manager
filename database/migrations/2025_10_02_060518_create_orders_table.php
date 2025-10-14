@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table): void {
             $table->id();
             $table->foreignId('table_id')->constrained();
-            $table->string('status')->default('pending');
+            $table->enum('status', ['new', 'in_process', 'ready', 'served', 'done'])->default('new');
             $table->decimal('total_amount', 10, 2);
-            $table->string('notes')->nullable();
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }

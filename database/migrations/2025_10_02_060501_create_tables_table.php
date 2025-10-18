@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('qr_code')->unique();
             $table->integer('capacity')->nullable();
-            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

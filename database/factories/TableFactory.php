@@ -16,11 +16,12 @@ class TableFactory extends Factory
      */
     public function definition(): array
     {
+        static $tableNumber = 1;
+
         return [
-            'name' => 'Table ' . $this->faker->numberBetween(1, 20),
-            'qr_code' => 'QR-' . $this->faker->unique()->numberBetween(1000, 9999),
+            'name' => 'Table '.$tableNumber++,
+            'qr_code' => 'TBL-'.str_pad($tableNumber - 1, 3, '0', STR_PAD_LEFT),
             'capacity' => $this->faker->numberBetween(2, 8),
-            'is_active' => $this->faker->boolean(85), // 85% chance of being active
         ];
     }
 }

@@ -18,7 +18,7 @@ class OrderFactory extends Factory
     public function definition(): array
     {
         return [
-            'table_id' => \App\Models\Table::factory(),
+            'table_id' => \App\Models\Table::inRandomOrder()->first()->id,
             'status' => $this->faker->randomElement([
                 OrderStatus::New->value,
                 OrderStatus::InProcess->value,

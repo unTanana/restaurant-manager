@@ -2,33 +2,7 @@ import { useEffect } from 'react';
 import { Head, router } from '@inertiajs/react';
 import { OrderCard } from '@/components/orders/order-card';
 import AppHeaderLayout from '@/layouts/app/app-header-layout';
-import { type BreadcrumbItem } from '@/types';
-
-interface OrderItem {
-    id: number;
-    quantity: number;
-    unit_price: string;
-    subtotal: string;
-    special_instructions?: string;
-    product: {
-        id: number;
-        name: string;
-        category: string;
-    };
-}
-
-interface Order {
-    id: number;
-    status: string;
-    total_amount: string;
-    notes?: string;
-    created_at: string;
-    table: {
-        id: number;
-        name: string;
-    };
-    order_items: OrderItem[];
-}
+import { type BreadcrumbItem, type Order, type OrderItem } from '@/types';
 
 interface OrdersData {
     new: Order[];

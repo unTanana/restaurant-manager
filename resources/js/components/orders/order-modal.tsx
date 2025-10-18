@@ -7,31 +7,7 @@ import {
     DialogFooter,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-
-interface OrderItem {
-    id: number;
-    quantity: number;
-    unit_price: string;
-    subtotal: string;
-    product: {
-        id: number;
-        name: string;
-        category: string;
-    };
-}
-
-interface Order {
-    id: number;
-    status: string;
-    total_amount: string;
-    notes?: string;
-    created_at: string;
-    table: {
-        id: number;
-        name: string;
-    };
-    order_items: OrderItem[];
-}
+import { type Order, type OrderItem } from '@/types';
 
 interface OrderModalProps {
     order: Order;

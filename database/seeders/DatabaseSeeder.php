@@ -28,8 +28,8 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        // Create tables (15 active tables)
-        $tables = Table::factory(15)->create();
+        // Create tables (12 tables)
+        $tables = Table::factory(12)->create();
 
         // Create products (50 products across different categories)
         $products = Product::factory(50)->create();

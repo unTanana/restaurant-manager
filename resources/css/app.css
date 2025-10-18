@@ -9,7 +9,7 @@
 
 @theme {
     --font-sans:
-        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Inter', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
@@ -59,6 +59,25 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+    
+    --color-order-action: var(--order-action);
+    --color-order-action-foreground: var(--order-action-foreground);
+    --color-order-action-border: var(--order-action-border);
+    --color-order-cancel: var(--order-cancel);
+    --color-order-cancel-foreground: var(--order-cancel-foreground);
+    --color-order-new: var(--order-new);
+    --color-order-new-border: var(--order-new-border);
+    --color-order-in-process: var(--order-in-process);
+    --color-order-in-process-foreground: var(--order-in-process-foreground);
+    --color-order-ready: var(--order-ready);
+    --color-order-ready-border: var(--order-ready-border);
+    --color-order-served: var(--order-served);
+    --color-order-served-border: var(--order-served-border);
+        --color-order-done: var(--order-done);
+        --color-order-done-border: var(--order-done-border);
+        --color-order-note: var(--order-note);
+        --color-nav-active: var(--nav-active);
+        --color-nav-active-shadow: var(--nav-active-shadow);
 }
 
 :root {
@@ -95,6 +114,26 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.87 0 0);
+    
+    /* Restaurant Order System Colors */
+    --order-action: #B8FFC7;
+    --order-action-foreground: #000000;
+    --order-action-border: #003E0E;
+    --order-cancel: #AAAAAA;
+    --order-cancel-foreground: #000000;
+    --order-new: #B8FFC7;
+    --order-new-border: #bbf7d0;
+    --order-in-process: #AAAAAA;
+    --order-in-process-foreground: #000000;
+    --order-ready: #F8DFDF;
+    --order-ready-border: #F8DFDF;
+    --order-served: #C8F7FB;
+    --order-served-border: #C8F7FB;
+    --order-done: #ffffff;
+    --order-done-border: #000000;
+    --order-note: #F8DFDF;
+    --nav-active: #4D4D4D;
+    --nav-active-shadow: 4px 2px 6px 0px #00000040;
 }
 
 .dark {
@@ -130,6 +169,26 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(0.269 0 0);
     --sidebar-ring: oklch(0.439 0 0);
+    
+    /* Restaurant Order System Colors - Dark Mode */
+    --order-action: #B8FFC7;
+    --order-action-foreground: #000000;
+    --order-action-border: #003E0E;
+    --order-cancel: #AAAAAA;
+    --order-cancel-foreground: #000000;
+    --order-new: #14532d;
+    --order-new-border: #166534;
+    --order-in-process: #AAAAAA;
+    --order-in-process-foreground: #000000;
+    --order-ready: #7f1d1d;
+    --order-ready-border: #991b1b;
+    --order-served: #1e3a8a;
+    --order-served-border: #1e40af;
+    --order-done: #1f2937;
+    --order-done-border: #374151;
+    --order-note: #F8DFDF;
+    --nav-active: #4D4D4D;
+    --nav-active-shadow: 4px 2px 6px 0px #00000040;
 }
 
 @layer base {

@@ -1,7 +1,7 @@
-import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../wayfinder'
+import { queryParams, type RouteQueryOptions, type RouteDefinition, applyUrlDefaults } from './../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/dashboard'
  */
 const index42a740574ecbfbac32f8cc353fc32db9 = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index42a740574ecbfbac32f8cc353fc32db9.definition = {
 
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/dashboard'
  */
 index42a740574ecbfbac32f8cc353fc32db9.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index42a740574ecbfbac32f8cc353fc32db9.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/dashboard'
  */
 index42a740574ecbfbac32f8cc353fc32db9.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ index42a740574ecbfbac32f8cc353fc32db9.get = (options?: RouteQueryOptions): Route
 })
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/dashboard'
  */
 index42a740574ecbfbac32f8cc353fc32db9.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,42 +44,7 @@ index42a740574ecbfbac32f8cc353fc32db9.head = (options?: RouteQueryOptions): Rout
 
     /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/dashboard'
- */
-    const index42a740574ecbfbac32f8cc353fc32db9Form = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: index42a740574ecbfbac32f8cc353fc32db9.url(options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/dashboard'
- */
-        index42a740574ecbfbac32f8cc353fc32db9Form.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: index42a740574ecbfbac32f8cc353fc32db9.url(options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/dashboard'
- */
-        index42a740574ecbfbac32f8cc353fc32db9Form.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: index42a740574ecbfbac32f8cc353fc32db9.url({
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    index42a740574ecbfbac32f8cc353fc32db9.form = index42a740574ecbfbac32f8cc353fc32db9Form
-    /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/orders'
  */
 const index46d571d7fe903e8a2eecb1a2ccbb23f8 = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -94,7 +59,7 @@ index46d571d7fe903e8a2eecb1a2ccbb23f8.definition = {
 
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/orders'
  */
 index46d571d7fe903e8a2eecb1a2ccbb23f8.url = (options?: RouteQueryOptions) => {
@@ -103,7 +68,7 @@ index46d571d7fe903e8a2eecb1a2ccbb23f8.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/orders'
  */
 index46d571d7fe903e8a2eecb1a2ccbb23f8.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -112,49 +77,13 @@ index46d571d7fe903e8a2eecb1a2ccbb23f8.get = (options?: RouteQueryOptions): Route
 })
 /**
 * @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
+ * @see app/Http/Controllers/OrdersController.php:15
  * @route '/orders'
  */
 index46d571d7fe903e8a2eecb1a2ccbb23f8.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     url: index46d571d7fe903e8a2eecb1a2ccbb23f8.url(options),
     method: 'head',
 })
-
-    /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/orders'
- */
-    const index46d571d7fe903e8a2eecb1a2ccbb23f8Form = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: index46d571d7fe903e8a2eecb1a2ccbb23f8.url(options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/orders'
- */
-        index46d571d7fe903e8a2eecb1a2ccbb23f8Form.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: index46d571d7fe903e8a2eecb1a2ccbb23f8.url(options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\OrdersController::index
- * @see app/Http/Controllers/OrdersController.php:14
- * @route '/orders'
- */
-        index46d571d7fe903e8a2eecb1a2ccbb23f8Form.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: index46d571d7fe903e8a2eecb1a2ccbb23f8.url({
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    index46d571d7fe903e8a2eecb1a2ccbb23f8.form = index46d571d7fe903e8a2eecb1a2ccbb23f8Form
 
 export const index = {
     '/dashboard': index42a740574ecbfbac32f8cc353fc32db9,
@@ -163,7 +92,7 @@ export const index = {
 
 /**
 * @see \App\Http\Controllers\OrdersController::updateStatus
- * @see app/Http/Controllers/OrdersController.php:32
+ * @see app/Http/Controllers/OrdersController.php:33
  * @route '/orders/{order}/status'
  */
 export const updateStatus = (args: { order: number | { id: number } } | [order: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'patch'> => ({
@@ -178,7 +107,7 @@ updateStatus.definition = {
 
 /**
 * @see \App\Http\Controllers\OrdersController::updateStatus
- * @see app/Http/Controllers/OrdersController.php:32
+ * @see app/Http/Controllers/OrdersController.php:33
  * @route '/orders/{order}/status'
  */
 updateStatus.url = (args: { order: number | { id: number } } | [order: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -211,45 +140,13 @@ updateStatus.url = (args: { order: number | { id: number } } | [order: number | 
 
 /**
 * @see \App\Http\Controllers\OrdersController::updateStatus
- * @see app/Http/Controllers/OrdersController.php:32
+ * @see app/Http/Controllers/OrdersController.php:33
  * @route '/orders/{order}/status'
  */
 updateStatus.patch = (args: { order: number | { id: number } } | [order: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'patch'> => ({
     url: updateStatus.url(args, options),
     method: 'patch',
 })
-
-    /**
-* @see \App\Http\Controllers\OrdersController::updateStatus
- * @see app/Http/Controllers/OrdersController.php:32
- * @route '/orders/{order}/status'
- */
-    const updateStatusForm = (args: { order: number | { id: number } } | [order: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-        action: updateStatus.url(args, {
-                    [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                        _method: 'PATCH',
-                        ...(options?.query ?? options?.mergeQuery ?? {}),
-                    }
-                }),
-        method: 'post',
-    })
-
-            /**
-* @see \App\Http\Controllers\OrdersController::updateStatus
- * @see app/Http/Controllers/OrdersController.php:32
- * @route '/orders/{order}/status'
- */
-        updateStatusForm.patch = (args: { order: number | { id: number } } | [order: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-            action: updateStatus.url(args, {
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'PATCH',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'post',
-        })
-    
-    updateStatus.form = updateStatusForm
 const OrdersController = { index, updateStatus }
 
 export default OrdersController

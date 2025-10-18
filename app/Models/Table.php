@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table query()
- *
  * @property int $id
  * @property string $name
  * @property string $qr_code
@@ -19,7 +18,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property int $is_active
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereCapacity($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereId($value)
@@ -27,7 +25,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereQrCode($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Table whereUpdatedAt($value)
- *
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Order> $orders
+ * @property-read int|null $orders_count
  * @mixin \Eloquent
  */
 class Table extends Model

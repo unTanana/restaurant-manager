@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\OrderStatus;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +19,13 @@ class OrderFactory extends Factory
     {
         return [
             'table_id' => \App\Models\Table::factory(),
-            'status' => $this->faker->randomElement(['new', 'in_process', 'ready', 'served', 'done']),
+            'status' => $this->faker->randomElement([
+                OrderStatus::New->value,
+                OrderStatus::InProcess->value,
+                OrderStatus::Ready->value,
+                OrderStatus::Served->value,
+                OrderStatus::Done->value,
+            ]),
             'total_amount' => $this->faker->randomFloat(2, 15, 150),
             'notes' => $this->faker->optional(0.3)->sentence(),
         ];
@@ -27,35 +34,35 @@ class OrderFactory extends Factory
     public function newOrder(): static
     {
         return $this->state(fn(array $attributes) => [
-            'status' => 'new',
+            'status' => OrderStatus::New->value,
         ]);
     }
 
     public function inProcess(): static
     {
         return $this->state(fn(array $attributes) => [
-            'status' => 'in_process',
+            'status' => OrderStatus::InProcess->value,
         ]);
     }
 
     public function ready(): static
     {
         return $this->state(fn(array $attributes) => [
-            'status' => 'ready',
+            'status' => OrderStatus::Ready->value,
         ]);
     }
 
     public function served(): static
     {
         return $this->state(fn(array $attributes) => [
-            'status' => 'served',
+            'status' => OrderStatus::Served->value,
         ]);
     }
 
     public function done(): static
     {
         return $this->state(fn(array $attributes) => [
-            'status' => 'done',
+            'status' => OrderStatus::Done->value,
         ]);
     }
 }
